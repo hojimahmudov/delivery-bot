@@ -590,7 +590,7 @@ async def location_handler(update, context):
     await update.message.reply_text(text_confirm, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(btn_confirm))
 
 
-app = ApplicationBuilder().token("6468139610:AAFlyBrKvDO4STlhtliUxlA1bcsylInyKFM").build()
+app = ApplicationBuilder().token("Your bot token").build()
 
 app.add_handler(CommandHandler('start', start))
 app.add_handler(CallbackQueryHandler(query_handler))
